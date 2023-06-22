@@ -1,0 +1,31 @@
+.section:nth-child(1) {
+    background-image: url('./assets/images/bgImages/tailor\ table.jpg');
+    position: relative;
+}
+
+.section:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section {
+    background-color: var(--color-background);
+}
+
+.section:last-child {
+    background-color: white;
+    color: black;
+}
+
+.Navigation {
+
+    // color: red;
+    .Navigation-Anchor {
+        background-color: var(--color-font-point) !important;
+    }
+}

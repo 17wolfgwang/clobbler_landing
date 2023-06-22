@@ -1,0 +1,23 @@
+body,
+html {
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--color-font-main);
+    background-color: var(--color-background);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.center {
+    width: 924px;
+    margin: 0 auto;
+}
+
+:root {
+    --color-font-main: #FFFDD0;
+    --color-font-point: #FFD700;
+    --color-background: #003366;
+    // --bg-image: url('../../public/images/tailor table.jpg')
+}

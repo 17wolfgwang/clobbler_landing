@@ -1,0 +1,13 @@
+.reserveBtn {
+    padding: 13px 26px;
+    background-color: transparent;
+    border: 2px solid var(--color-font-point);
+    border-radius: 5px;
+    color: var(--color-font-point);
+    font-family: 'Noto Sans KR', sans-serif;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}
