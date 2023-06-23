@@ -13,6 +13,67 @@
         height: 45vh;
         background-color: var(--color-font-main);
         border-radius: 15px;
+        overflow: hidden;
+
+        .diagonalBox0 {
+            position: absolute;
+            width: 4vw;
+            height: 50vh;
+            transform: rotate(-45deg);
+            background-color: var(--color-font-point);
+            top: -10vh;
+            right: 15vw;
+        }
+
+        .diagonalBox1 {
+            position: absolute;
+            width: 4vw;
+            height: 50vh;
+            transform: rotate(-45deg);
+            background-color: var(--color-background);
+            top: -10vh;
+            right: 10vw;
+        }
+
+        .diagonalBox2 {
+            position: absolute;
+            width: 4vw;
+            height: 50vh;
+            transform: rotate(-45deg);
+            background-color: var(--color-font-point);
+            top: -10vh;
+            right: 5vw;
+        }
+
+        .diagonalBox3 {
+            position: absolute;
+            width: 4vw;
+            height: 50vh;
+            transform: rotate(-45deg);
+            background-color: var(--color-background);
+            top: -10vh;
+            right: 0vw;
+        }
+
+        .diagonalBox4 {
+            position: absolute;
+            width: 4vw;
+            height: 50vh;
+            transform: rotate(-45deg);
+            background-color: var(--color-font-point);
+            top: -10vh;
+            right: -5vw;
+        }
+
+        .diagonalBox5 {
+            position: absolute;
+            width: 4vw;
+            height: 50vh;
+            transform: rotate(-45deg);
+            background-color: var(--color-background);
+            top: -10vh;
+            right: -10vw;
+        }
     }
 
     .serviceTeamPageTitleSection {

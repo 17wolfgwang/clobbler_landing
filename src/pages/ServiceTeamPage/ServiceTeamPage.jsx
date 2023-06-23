@@ -6,6 +6,16 @@ const ServiceTeamPage = () => {
     return (
         <div className='center serviceTeamPage'>
             <div className='bgBigBox'>
+                <div className='diagonalBox0'></div>
+
+                <div className='diagonalBox1'></div>
+                <div className='diagonalBox2'></div>
+                <div className='diagonalBox3'></div>
+                <div className='diagonalBox4'></div>
+                <div className='diagonalBox5'></div>
+
+
+
             </div>
 
             <div className='serviceTeamPageTitleSection'>

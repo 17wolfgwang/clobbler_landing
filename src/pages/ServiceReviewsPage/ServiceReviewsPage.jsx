@@ -26,7 +26,7 @@ const ServiceReviewsPage = () => {
     return (
         <div className='center serviceReviewsPage'>
             <div className='serviceReviewsPageTitle'>
-                다양한 고객들의 소중한 이용 후기를 확인해보세요.
+                고객들의 소중한 이용 후기를 확인해보세요.
             </div>
             <div className='reviewsSection'>
                 <Swiper
@@ -54,15 +54,14 @@ const ServiceReviewsPage = () => {
                 </Swiper>
             </div>
             <div className='bgBox'>
-                <div className='bgLineGold1'></div>
-                <div className='bgLineNavy1'></div>
-                <div className='bgLineGold2'></div>
-                <div className='bgLineNavy2'></div>
-                <div className='bgLineGold3'></div>
-                <div className='bgLineNavy3'></div>
-
-
-
+                <div className='bgLineBox'>
+                    <div className='bgLineGold1'></div>
+                    <div className='bgLineNavy1'></div>
+                    <div className='bgLineGold2'></div>
+                    <div className='bgLineNavy2'></div>
+                    <div className='bgLineGold3'></div>
+                    <div className='bgLineNavy3'></div>
+                </div>
 
             </div>
         </div>

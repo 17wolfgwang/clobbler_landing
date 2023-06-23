@@ -1,0 +1,102 @@
+.serviceFooterPage {
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+    .lastTitleSection {
+        position: absolute;
+        right: 0;
+        text-align: right;
+        width: 45vw;
+        user-select: none;
+
+
+        .lastTitle {
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 10vh;
+        }
+
+        Button {
+            margin-top: 5vh;
+            transform: scale(1.2);
+            background-color: black;
+            border-color: black;
+            color: white;
+        }
+    }
+
+    .businessPartnerSection {
+        position: absolute;
+        width: 50%;
+        height: 50vh;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin-top: 10vh;
+
+
+        .businessPartnerTitle {
+            font-size: 2rem;
+            font-weight: 900;
+            opacity: 0.5;
+            margin: 1vh;
+        }
+
+        .businessPartnerGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+
+            .businessPartner {
+                height: 10vh;
+                font-size: 0.9rem;
+                opacity: 0.5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 30%;
+                    max-height: 30%;
+                    display: block;
+                }
+
+                .clothAssosiationLogo {
+                    width: 10%;
+                    height: 15%;
+                }
+            }
+
+            .clothAssosiation {
+                font-size: 0.8rem;
+            }
+
+            .businessPartner:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .footerSection {
+        position: absolute;
+        width: 50vw;
+        height: 20vh;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+        margin-bottom: 6vh;
+
+        .footerTitle {
+            color: grey;
+            user-select: none;
+            line-height: 2vh;
+        }
+    }
+}
