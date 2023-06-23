@@ -1,0 +1,112 @@
+.serviceTeamPage {
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+    .bgBigBox {
+        position: absolute;
+        left: 0;
+        width: 80vw;
+        height: 45vh;
+        background-color: var(--color-font-main);
+        border-radius: 15px;
+    }
+
+    .serviceTeamPageTitleSection {
+        position: absolute;
+        top: 30vh;
+        left: 3vw;
+        text-align: left;
+        width: 600px;
+        color: var(--color-background);
+
+        .serviceTeamPageTitle {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 7vh;
+        }
+
+        .serviceTeamPageSubTitle {
+            font-size: 1rem;
+            line-height: 3vh;
+        }
+
+        Button {
+            margin-left: 3vw;
+            margin-top: 5vh;
+            transform: scale(1.2);
+        }
+    }
+
+    .videoSection {
+        position: absolute;
+        right: 5vw;
+        bottom: 10vh;
+
+        // background-color: var(--color-font-main);
+        .bgVideoSection {
+            position: relative;
+            width: 50vw;
+            height: 35vh;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+
+            .videoBtnSection {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100px;
+                height: 2vh;
+                margin: 1vh;
+
+                // background-color: red;
+                display: flex;
+                align-items: center;
+
+                .videoBtnRed {
+                    width: 1vw;
+                    height: 1vw;
+                    border-radius: 50%;
+                    background-color: red;
+                    margin-right: 1vh;
+                }
+
+                .videoBtnYellow {
+                    width: 1vw;
+                    height: 1vw;
+                    border-radius: 50%;
+                    background-color: yellow;
+                    margin-right: 1vh;
+
+                }
+
+                .videoBtnGreen {
+                    width: 1vw;
+                    height: 1vw;
+                    border-radius: 50%;
+                    background-color: lightgreen;
+                    margin-right: 1vh;
+
+                }
+            }
+
+
+            .video {
+                width: 50vw;
+                height: 30vh;
+                background-color: black;
+                border-radius: 15px;
+                margin: 1vh;
+            }
+        }
+
+    }
+
+
+}

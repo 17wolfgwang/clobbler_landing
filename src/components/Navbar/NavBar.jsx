@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './NavBar.scss';
 
 import Button from '../Button/Button';
 
 const NavBar = () => {
-    window.addEventListener('scroll', function () {
-        console.log(window.scrollY);
-    });
+
     return (
         <div className='center navBarWrap'>
             <div className='center navBar'>

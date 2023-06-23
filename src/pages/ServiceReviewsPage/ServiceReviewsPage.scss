@@ -1,0 +1,115 @@
+.serviceReviewsPage {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+
+    .serviceReviewsPageTitle {
+        font-size: 2.6rem;
+        font-weight: 900;
+        line-height: 10vh;
+        margin-top: 8vh;
+        color: var(--color-background);
+        z-index: 10;
+    }
+
+    .reviewsSection {
+        width: 50vw;
+        z-index: 10;
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            // background-color: var(--color-font-main);
+            margin-top: 5vh;
+            // border-radius: 15px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+    }
+
+    .bgBox {
+        position: absolute;
+        right: 0;
+        bottom: 15vh;
+        width: 0vw;
+        height: 60vh;
+        background-color: var(--color-font-main);
+        opacity: 0;
+        transition: all 1s ease;
+
+        .bgLineGold1 {
+            position: absolute;
+            left: 30vw;
+            width: 2vw;
+            height: 60vh;
+            background-color: var(--color-font-point);
+            z-index: 11;
+        }
+
+        .bgLineNavy1 {
+            position: absolute;
+            left: 27vw;
+            width: 2vw;
+            height: 60vh;
+            background-color: var(--color-background);
+            z-index: 11;
+        }
+
+        .bgLineGold2 {
+            position: absolute;
+            left: 24vw;
+            width: 2vw;
+            height: 60vh;
+            background-color: var(--color-font-point);
+            z-index: 11;
+        }
+
+        .bgLineNavy2 {
+            position: absolute;
+            left: 21vw;
+            width: 2vw;
+            height: 60vh;
+            background-color: var(--color-background);
+            z-index: 11;
+        }
+
+        .bgLineGold3 {
+            position: absolute;
+            left: 18vw;
+            width: 2vw;
+            height: 60vh;
+            background-color: var(--color-font-point);
+            z-index: 11;
+        }
+
+        .bgLineNavy3 {
+            position: absolute;
+            left: 15vw;
+            width: 2vw;
+            height: 60vh;
+            background-color: var(--color-background);
+            z-index: 11;
+        }
+    }
+
+    .bgBox.show {
+        width: 90vw;
+        opacity: 1;
+    }
+
+}

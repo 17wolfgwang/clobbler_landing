@@ -23,9 +23,19 @@
 }
 
 .Navigation {
+    right: 0 !important;
 
-    // color: red;
     .Navigation-Anchor {
+        margin: 40px 0 !important;
+        margin-right: 5vw !important;
         background-color: var(--color-font-point) !important;
+    }
+
+    .Navigation-Anchor:nth-child(1) {
+        display: none !important;
+    }
+
+    .Navigation-Anchor:last-child {
+        display: none !important;
     }
 }
