@@ -23,6 +23,10 @@
         left: 10vw;
         bottom: 20vh;
         transform: scale(1.3);
+
+        &:hover {
+            pointer-events: auto;
+        }
     }
 
     .downloadSection {

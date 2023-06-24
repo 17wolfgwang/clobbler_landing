@@ -24,9 +24,19 @@
             margin: auto;
             margin-right: 50px;
 
+            Button {
+                opacity: 0;
+            }
+
             .snsIcon {
                 width: 35px;
                 height: 35px;
+                background: transparent;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
             }
         }
 

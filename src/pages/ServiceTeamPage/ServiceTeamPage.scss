@@ -98,6 +98,12 @@
             margin-left: 3vw;
             margin-top: 5vh;
             transform: scale(1.2);
+            background-color: var(--color-font-point);
+            color: var(--color-background);
+
+            &:hover {
+                pointer-events: auto;
+            }
         }
     }
 

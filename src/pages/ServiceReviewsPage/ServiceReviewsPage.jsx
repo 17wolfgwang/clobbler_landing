@@ -9,6 +9,7 @@ import 'swiper/css/scrollbar';
 
 SwiperCore.use([EffectCoverflow, Pagination]);
 const slide_img = [
+    "/images/reviews/mended1.jpeg",
     "https://swiperjs.com/demos/images/nature-1.jpg",
     "https://swiperjs.com/demos/images/nature-2.jpg",
     "https://swiperjs.com/demos/images/nature-3.jpg",

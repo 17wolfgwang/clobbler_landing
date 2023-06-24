@@ -24,6 +24,10 @@
             background-color: black;
             border-color: black;
             color: white;
+
+            &:hover {
+                pointer-events: auto;
+            }
         }
     }
 
