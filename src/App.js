@@ -9,7 +9,6 @@ import './App.scss';
 import NavBar from "./components/Navbar/NavBar";
 import ScrollToTopOnReload from "./Reload";
 import RouteChangeTracker from "./RouteChangeTracker";
-import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
     RouteChangeTracker();
@@ -104,7 +103,7 @@ const App = () => {
     window.addEventListener('popstate', handlePopstate);
 
     return (
-        <BrowserRouter>
+        <>
             <ScrollToTopOnReload />
             {/* <ScrollToTopOnMount /> */}
             <NavBar />
@@ -115,7 +114,7 @@ const App = () => {
                 <Section><ServiceTeamPage /></Section>
                 <Section><ServiceFooterPage /></Section>
             </SectionsContainer>
-        </BrowserRouter>
+        </>
     )
 }
 
