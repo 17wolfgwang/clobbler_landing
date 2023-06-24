@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { SectionsContainer, Section } from 'react-fullpage';
 import ServiceMainPage from "./pages/ServiceMainPage/ServiceMainPage";
 import ServiceFooterPage from "./pages/ServiceFooterPage/ServiceFooterPage";
@@ -23,45 +23,60 @@ const App = () => {
         delay: 770,
     };
 
+    function addDiagonalAnim(array) {
+        array.forEach((ele) => (
+            ele.classList.add('diagonalBoxAnim'))
+        )
+    }
+
+    function removeDiagonalAnim(array) {
+        array.forEach((ele) => (
+            ele.classList.remove('diagonalBoxAnim'))
+        )
+    }
 
 
-    window.addEventListener('popstate', () => {
+    const handlePopstate = () => {
         const currentUrl = window.location.href;
         const lastChar = Number(currentUrl[currentUrl.length - 1]);
         const sections = document.querySelectorAll(".section");
         const sectionsLength = sections.length;
         const navbar = document.querySelector(".navBar");
-
         const bgBox = document.querySelector(".bgBox");
-        if (lastChar === sectionsLength) {
-            navbar.style.transition = 'opacity 1s';
-            navbar.style.opacity = '0';
-            setIsFirstOrLast(true);
-        }
-        else if (lastChar === 1) {
-            setIsFirstOrLast(true);
-            bgBox.classList.remove('show');
-        }
-        else if (lastChar === 2) {
-            setIsFirstOrLast(false);
-            bgBox.classList.add('show');
+        const diagonalBoxs = document.querySelectorAll(".diagonalBox");
 
+        switch (lastChar) {
+            case sectionsLength:
+                removeDiagonalAnim(diagonalBoxs);
+                navbar.style.transition = 'opacity 1s';
+                navbar.style.opacity = '0';
+                setIsFirstOrLast(true);
+                break;
+            case 1:
+                navbar.style.opacity = '1';
+                setIsFirstOrLast(false);
+                bgBox.classList.remove("show");
+                break;
+            case 2:
+                setIsFirstOrLast(false);
+                bgBox.classList.add('show');
+                break;
+            case 3:
+                setIsFirstOrLast(false);
+                bgBox.classList.remove('show');
+                removeDiagonalAnim(diagonalBoxs);
+                break;
+            case 4:
+                navbar.style.opacity = '1';
+                setIsFirstOrLast(false);
+                addDiagonalAnim(diagonalBoxs);
+                break;
+            default:
+                break;
         }
-        else if (lastChar === 3) {
-            setIsFirstOrLast(false);
-            bgBox.classList.remove('show');
-        }
-        else {
-            setIsFirstOrLast(false);
-            navbar.style.transition = 'opacity 1s';
-            navbar.style.opacity = '1';
-            // bgBox.classList.remove('show');
+    }
 
-        }
-    });
-
-
-
+    window.addEventListener('popstate', handlePopstate);
     return (
         <div>
             {/* <ScrollToTopOnMount /> */}

@@ -6,16 +6,12 @@ const ServiceTeamPage = () => {
     return (
         <div className='center serviceTeamPage'>
             <div className='bgBigBox'>
-                <div className='diagonalBox0'></div>
-
-                <div className='diagonalBox1'></div>
-                <div className='diagonalBox2'></div>
-                <div className='diagonalBox3'></div>
-                <div className='diagonalBox4'></div>
-                <div className='diagonalBox5'></div>
-
-
-
+                <div className='diagonalBox diagonalBox0'></div>
+                <div className='diagonalBox diagonalBox1'></div>
+                <div className='diagonalBox diagonalBox2'></div>
+                <div className='diagonalBox diagonalBox3'></div>
+                <div className='diagonalBox diagonalBox4'></div>
+                <div className='diagonalBox diagonalBox5'></div>
             </div>
 
             <div className='serviceTeamPageTitleSection'>
@@ -33,7 +29,7 @@ const ServiceTeamPage = () => {
                         <div className='videoBtnYellow'></div>
                         <div className='videoBtnGreen'></div>
                     </div>
-                    <iframe className="video" src="https://www.youtube.com/embed/B-RMhavlRGs?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+                    <img className="video" src="/images/team/tailor2.gif" alt="수선사" />
                 </div>
             </div>
         </div>
