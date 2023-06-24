@@ -1,6 +1,5 @@
 import React from 'react';
 import './ServiceReviewsPage.scss';
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import 'swiper/css';
@@ -9,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 SwiperCore.use([EffectCoverflow, Pagination]);
-// if you want to use array
 const slide_img = [
     "https://swiperjs.com/demos/images/nature-1.jpg",
     "https://swiperjs.com/demos/images/nature-2.jpg",

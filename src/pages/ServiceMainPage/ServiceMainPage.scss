@@ -5,21 +5,11 @@
     align-items: center;
     min-height: 100vh;
 
-
     .headingSection {
         position: absolute;
         right: 0;
         text-align: right;
         width: 600px;
-
-        .headingBackgroundImage {
-            position: absolute;
-            top: 16vh;
-            left: 0;
-            width: 700px;
-            height: 450px;
-            z-index: -1;
-        }
 
         .heading {
             font-size: 5rem;

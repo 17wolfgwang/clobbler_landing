@@ -18,18 +18,14 @@
         margin-bottom: 8vh;
     }
 
-
     .numberSection {
         align-items: center;
         text-align: center;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* 4개의 열을 동일한 너비로 설정 */
         grid-template-rows: repeat(4, 1fr);
-        /* 4개의 행을 동일한 높이로 설정 */
         gap: 10px;
 
-        /* 열과 행 사이의 간격 설정 (옵션) */
         .numberDescTxt {
             font-size: 1.5rem;
         }
@@ -39,8 +35,5 @@
             font-weight: bold;
 
         }
-
     }
-
-
 }

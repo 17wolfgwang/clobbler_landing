@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { SectionsContainer, Section } from 'react-fullpage';
 import ServiceMainPage from "./pages/ServiceMainPage/ServiceMainPage";
 import ServiceFooterPage from "./pages/ServiceFooterPage/ServiceFooterPage";
@@ -54,7 +54,7 @@ const App = () => {
                 break;
             case 1:
                 navbar.style.opacity = '1';
-                setIsFirstOrLast(false);
+                setIsFirstOrLast(true);
                 bgBox.classList.remove("show");
                 break;
             case 2:

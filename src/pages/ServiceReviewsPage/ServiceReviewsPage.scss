@@ -53,8 +53,6 @@
         transition: all 1s ease;
 
         .bgLineBox {
-            // width: 500px;
-            // height: 500px;
             position: absolute;
 
             .bgLineGold1 {
@@ -108,12 +106,10 @@
                 opacity: 0.7;
             }
         }
-
     }
 
     .bgBox.show {
         width: 100vw;
         opacity: 1;
     }
-
 }

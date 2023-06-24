@@ -13,7 +13,7 @@ const ServiceFooterPage = () => {
             </div>
 
             <div className='businessPartnerSection'>
-                <div class="businessPartnerTitle">Partners</div>
+                <div className="businessPartnerTitle">Partners</div>
                 <div className='businessPartnerGrid'>
                     <div className='businessPartner clothAssosiation'>
                         <img className="clothAssosiationLogo" src="/images/partners/clothAssosiationLogo.jpeg" alt="의류협회" />
