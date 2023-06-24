@@ -8,10 +8,9 @@ import ServiceTeamPage from "./pages/ServiceTeamPage/ServiceTeamPage";
 import './App.scss';
 import NavBar from "./components/Navbar/NavBar";
 import ScrollToTopOnReload from "./Reload";
-import RouteChangeTracker from "./RouteChangeTracker";
+// import GoogleAnalytics from "./GoogleAnalytics";
 
 const App = () => {
-    RouteChangeTracker();
     const anchors = ['1', '2', '3', '4', '5'];
 
     const [isFirstOrLast, setIsFirstOrLast] = useState(true);
@@ -105,7 +104,6 @@ const App = () => {
     return (
         <>
             <ScrollToTopOnReload />
-            {/* <ScrollToTopOnMount /> */}
             <NavBar />
             <SectionsContainer {...options}>
                 <Section><ServiceMainPage /></Section>
