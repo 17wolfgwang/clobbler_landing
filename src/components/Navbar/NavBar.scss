@@ -5,9 +5,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 5vw 2vw;
+        margin: 3vw 2vw;
         margin-bottom: 0;
         border-bottom: 3px solid var(--color-font-point);
+        align-items: center;
 
         .logo {
             font-size: 3.5vw;
@@ -18,20 +19,19 @@
 
         .snsGroup {
             display: flex;
-            justify-content: space-between;
+            justify-content: right;
             width: 30vw;
             align-items: center;
-            margin: auto;
-            margin-right: 5vw;
+            margin-right: 2vw;
 
             Button {
                 opacity: 0;
             }
 
             .snsIcon {
-                width: 3vw;
-                height: 3vw;
-                margin: 1vw;
+                width: 34px;
+                height: 34px;
+                margin: 0 1.5vw;
                 background: transparent;
 
                 img {
@@ -43,50 +43,26 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
     .navBarWrap .navBar {
+        margin: 5vh 2vw;
 
-        /* 스마트폰 세로에 대한 스타일 */
-        /* 여기에 원하는 스타일을 추가하세요 */
         .logo {
-            font-size: 8vw;
-            padding: 4vw;
+            font-size: 3.5vw;
+            padding: 2vw;
         }
 
         .snsGroup {
-            width: 70vw;
+            width: 30vw;
 
             Button {
-                display: none;
+                opacity: 0;
             }
 
             .snsIcon {
-                width: 10vw;
-                height: 10vw;
-                margin: 2vw;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .navBarWrap .navBar {
-        .logo {
-            font-size: 8vw;
-            padding: 4vw;
-        }
-
-        .snsGroup {
-            width: 70vw;
-
-            Button {
-                display: none;
-            }
-
-            .snsIcon {
-                width: 10vw;
-                height: 10vw;
-                margin: 2vw;
+                width: 3vw;
+                height: 3vw;
+                margin: 0 1.5vw;
             }
         }
     }
@@ -95,12 +71,11 @@
 @media screen and (max-width: 767px) {
     .navBarWrap .navBar {
         margin: 10vw 2vw;
-
         border-bottom: none;
 
         .logo {
-            font-size: 8vw;
-            padding: 4vw;
+            font-size: 3.5vw;
+            padding: 2vw;
         }
 
         .snsGroup {
@@ -108,7 +83,7 @@
 
 
             Button {
-                display: none;
+                opacity: 0;
             }
 
             .snsIcon {
@@ -126,26 +101,47 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
     .navBarWrap .navBar {
-        margin: 5vh 2vw;
-
         .logo {
             font-size: 3.5vw;
             padding: 2vw;
         }
 
         .snsGroup {
-            width: 20vw;
+            width: 30vw;
 
             Button {
-                display: none;
+                opacity: 0;
             }
 
             .snsIcon {
-                width: 3vw;
-                height: 3vw;
-                margin: 1vw;
+                width: 12vw;
+                height: 12vw;
+                margin: 0 2vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .navBarWrap .navBar {
+        .logo {
+            font-size: 3.5vw;
+            padding: 2vw;
+        }
+
+        .snsGroup {
+            width: 30vw;
+
+            Button {
+                opacity: 0;
+            }
+
+            .snsIcon {
+                width: 12vw;
+                height: 12vw;
+                margin: 0 2vw;
             }
         }
     }

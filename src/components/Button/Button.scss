@@ -1,10 +1,13 @@
 .reserveBtn {
-    padding: 1.5vw 3vw;
+    width: 11.5vw;
+    padding: 1vh 2vw;
+    margin: 1vw;
     background-color: transparent;
-    border: 0.2vw solid var(--color-font-point);
-    border-radius: 1vw;
+    border: 0.15vw solid var(--color-font-point);
+    border-radius: 0.5vw;
     color: var(--color-font-point);
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9vw;
 
     a {
         all: unset;
@@ -16,40 +19,23 @@
         box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.2);
         transition: all 0.5s;
     }
-}
 
-@media only screen and (max-width: 320px) {
-    .reserveBtn {
-        padding: 10px 20px;
-        border: 2px solid var(--color-font-point);
-        border-radius: 5px;
-        font-size: 14px;
+    @media screen and (max-width: 1024px) {
+        padding: 1vh 2vw;
     }
-}
 
-@media only screen and (max-width: 480px) {
-    .reserveBtn {
-        padding: 15px 30px;
-        border: 3px solid var(--color-font-point);
-        border-radius: 7px;
-        font-size: 16px;
+    @media screen and (max-width: 767px) {
+        width: 15vw;
+        padding: 0.5vh 2vw;
     }
-}
 
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-    .reserveBtn {
-        padding: 1.2vw 2.5vw;
-        border: 0.15vw solid var(--color-font-point);
-        border-radius: 0.8vw;
-        font-size: 2.5vw;
+    @media only screen and (max-width: 480px) {
+        width: 42vw;
+        padding: 0.5vh 2vw;
     }
-}
 
-@media only screen and (min-width: 1024px) {
-    .reserveBtn {
-        padding: 0.8vw 1.5vw;
-        border: 0.1vw solid var(--color-font-point);
-        border-radius: 0.5vw;
-        font-size: 1.5vw;
+    @media only screen and (max-width: 320px) {
+        width: 43vw;
+        padding: 0.5vh 2vw;
     }
 }

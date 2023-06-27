@@ -31,8 +31,8 @@ const ServiceReviewsPage = () => {
                 <Swiper
                     effect={"coverflow"}
                     grabCursor={true}
-                    centeredSlides={true}
-                    slidesPerView={"auto"}
+                    // centeredSlides={true}
+                    // slidesPerView={"auto"}
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
@@ -42,6 +42,16 @@ const ServiceReviewsPage = () => {
                     }}
                     pagination={true}
                     className="mySwiper"
+                    breakpoints={{
+                        640: {
+                            width: 640,
+                            slidesPerView: 3,
+                        },
+                        768: {
+                            width: 768,
+                            slidesPerView: 6,
+                        },
+                    }}
                 >
                     {slide_img.map((img, i) => {
                         return (

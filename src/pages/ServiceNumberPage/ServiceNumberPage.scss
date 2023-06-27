@@ -9,22 +9,25 @@
     .serviceNumberPageTitle {
         font-size: 3rem;
         font-weight: 900;
+        margin-top: 5vh;
     }
 
     .serviceNumberPageSubTitle {
         font-size: 1rem;
         font-weight: 900;
         margin: 3vh 0;
-        margin-bottom: 8vh;
+        margin-bottom: 5vh;
     }
 
     .numberSection {
+        margin-top: 5vh;
         align-items: center;
         text-align: center;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 10px;
+        row-gap: 4vh;
 
         .numberDescTxt {
             font-size: 1.5rem;
@@ -34,6 +37,144 @@
             font-size: 3rem;
             font-weight: bold;
 
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .serviceNumberPage .serviceNumberPageTitle {
+        font-size: 2.6rem;
+    }
+
+    .serviceNumberPage .serviceNumberPageSubTitle {
+        font-size: 1rem;
+        margin-bottom: 8vh;
+    }
+
+    .serviceNumberPage .numberSection {
+        gap: 10x;
+        margin-top: 3vh;
+
+        .numberDescTxt {
+            font-size: 1.5rem;
+        }
+
+        .number {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .serviceNumberPage .serviceNumberPageTitle {
+        font-size: 1.7rem;
+    }
+
+    .serviceNumberPage .serviceNumberPageSubTitle {
+        // font-size: 1rem;
+        margin-bottom: 3vh;
+    }
+
+    .serviceNumberPage .numberSection {
+        gap: 10px;
+        row-gap: 4.5vh;
+
+        div {
+            width: 16vw;
+            height: 3vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .numberDescTxt {
+            font-size: 1rem;
+        }
+
+        .number {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .serviceNumberPage .serviceNumberPageTitle {
+        font-size: 1.15rem;
+        margin-top: 0vh;
+    }
+
+    .serviceNumberPage .serviceNumberPageSubTitle {
+        font-size: 0.7rem;
+        margin-bottom: 6vh;
+    }
+
+    .serviceNumberPage .numberSection {
+        gap: 8px;
+        row-gap: 4vh;
+
+        div {
+            width: 17vw;
+            height: 3vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .numberDescTxt {
+            font-size: 0.45rem;
+            font-weight: 900;
+            background-color: var(--color-font-point);
+            // padding: 5px 0.5px;
+        }
+
+        .number {
+            font-size: 1.2rem;
+        }
+
+        span {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .serviceNumberPage .serviceNumberPageTitle {
+        font-size: 1rem;
+    }
+
+    .serviceNumberPage .serviceNumberPageSubTitle {
+        font-size: 0.7rem;
+        margin-bottom: 6vh;
+    }
+
+    .serviceNumberPage .numberSection {
+        gap: 6px;
+        row-gap: 4vh;
+
+        div {
+            width: 16vw;
+            height: 3vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .numberDescTxt {
+            font-size: 0.35rem;
+            font-weight: 900;
+            background-color: var(--color-font-point);
+            // padding: 5px 0.5px;
+        }
+
+        .number {
+            font-size: 1rem;
+        }
+
+        span {
+            font-size: 0.5rem;
         }
     }
 }
