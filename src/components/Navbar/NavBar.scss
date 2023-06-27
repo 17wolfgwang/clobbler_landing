@@ -5,13 +5,13 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 100px 20px;
-        margin-bottom: 0px;
+        margin: 5vw 2vw;
+        margin-bottom: 0;
         border-bottom: 3px solid var(--color-font-point);
 
         .logo {
-            font-size: 50px;
-            padding: 26px;
+            font-size: 3.5vw;
+            padding: 2vw;
             font-weight: 900;
             color: var(--color-font-point);
         }
@@ -19,18 +19,19 @@
         .snsGroup {
             display: flex;
             justify-content: space-between;
-            width: 350px;
+            width: 30vw;
             align-items: center;
             margin: auto;
-            margin-right: 50px;
+            margin-right: 5vw;
 
             Button {
                 opacity: 0;
             }
 
             .snsIcon {
-                width: 35px;
-                height: 35px;
+                width: 3vw;
+                height: 3vw;
+                margin: 1vw;
                 background: transparent;
 
                 img {
@@ -39,6 +40,113 @@
                 }
             }
         }
+    }
+}
 
+@media only screen and (max-width: 320px) {
+    .navBarWrap .navBar {
+
+        /* 스마트폰 세로에 대한 스타일 */
+        /* 여기에 원하는 스타일을 추가하세요 */
+        .logo {
+            font-size: 8vw;
+            padding: 4vw;
+        }
+
+        .snsGroup {
+            width: 70vw;
+
+            Button {
+                display: none;
+            }
+
+            .snsIcon {
+                width: 10vw;
+                height: 10vw;
+                margin: 2vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navBarWrap .navBar {
+        .logo {
+            font-size: 8vw;
+            padding: 4vw;
+        }
+
+        .snsGroup {
+            width: 70vw;
+
+            Button {
+                display: none;
+            }
+
+            .snsIcon {
+                width: 10vw;
+                height: 10vw;
+                margin: 2vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navBarWrap .navBar {
+        margin: 10vw 2vw;
+
+        border-bottom: none;
+
+        .logo {
+            font-size: 8vw;
+            padding: 4vw;
+        }
+
+        .snsGroup {
+            width: 30vw;
+
+
+            Button {
+                display: none;
+            }
+
+            .snsIcon {
+                width: 5vw;
+                height: 5vw;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navBarWrap .navBar {
+        margin: 5vh 2vw;
+
+        .logo {
+            font-size: 3.5vw;
+            padding: 2vw;
+        }
+
+        .snsGroup {
+            width: 20vw;
+
+            Button {
+                display: none;
+            }
+
+            .snsIcon {
+                width: 3vw;
+                height: 3vw;
+                margin: 1vw;
+            }
+        }
     }
 }

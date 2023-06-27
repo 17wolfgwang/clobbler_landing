@@ -9,10 +9,10 @@
         position: absolute;
         right: 0;
         text-align: right;
-        width: 600px;
+        width: 60vw;
 
         .heading {
-            font-size: 5rem;
+            font-size: 5vw;
             font-weight: 900;
             line-height: 10vh;
         }
@@ -36,4 +36,87 @@
         display: flex;
     }
 
+    @media only screen and (max-width: 320px) {
+        .headingSection {
+            width: 80vw;
+
+            .heading {
+                font-size: 7vw;
+            }
+        }
+
+        Button {
+            left: 5vw;
+            bottom: 15vh;
+            transform: scale(1);
+        }
+
+        .downloadSection {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .headingSection {
+            width: 80vw;
+
+            .heading {
+                font-size: 7vw;
+            }
+        }
+
+        Button {
+            left: 5vw;
+            bottom: 15vh;
+            transform: scale(1);
+        }
+
+        .downloadSection {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+        .headingSection {
+            width: 45vw;
+
+            .heading {
+                font-size: 3vw;
+            }
+        }
+
+        Button {
+            left: 8vw;
+            bottom: 12vh;
+            transform: scale(1.2);
+        }
+
+        .downloadSection {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    // @media only screen and (min-width: 1024px) {
+    //     .headingSection {
+    //         width: 30vw;
+
+    //         .heading {
+    //             font-size: 2vw;
+    //         }
+    //     }
+
+    //     Button {
+    //         left: 8vw;
+    //         bottom: 10vh;
+    //         transform: scale(1.2);
+    //     }
+
+    //     .downloadSection {
+    //         flex-direction: row;
+    //         align-items: center;
+    //     }
+    // }
 }

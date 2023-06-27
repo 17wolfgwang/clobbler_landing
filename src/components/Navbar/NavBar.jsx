@@ -18,7 +18,7 @@ const NavBar = () => {
                         <img src="/images/youtube_Logo.svg" alt="youtube" />
                     </a>
                     <a className="snsIcon" href="https://www.instagram.com/clobbler_official/" target="_blank">
-                        <img className="snsIcon" src="/images/instagram_Logo.svg" alt="instagram" />
+                        <img src="/images/instagram_Logo.svg" alt="instagram" />
                     </a>
                 </div>
             </div>
