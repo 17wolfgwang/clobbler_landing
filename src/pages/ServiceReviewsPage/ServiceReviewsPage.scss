@@ -7,29 +7,43 @@
     position: relative;
 
     .serviceReviewsPageTitle {
-        font-size: 2.4rem;
+        font-size: 2.8vw;
         font-weight: 900;
         line-height: 10vh;
         margin: 1vw;
         color: var(--color-background);
         z-index: 10;
         position: absolute;
-        top: 25vh;
-        right: 2vw;
+        top: 24vh;
+        // right: 2vw;
     }
 
     .reviewsSection {
-        width: 50vw;
+        position: absolute;
+        width: 45vw;
+        // right: 0vw;
+        bottom: 17vh;
         z-index: 10;
 
+        .mySwiper2 {
+            display: none;
+        }
+
         .swiper-wrapper {
-            height: 35vh;
+            // width: 20vw;
+            height: 48vh;
+        }
+
+        .swiper-button-prev {
+            position: absolute;
+            left: 0;
+            bottom: 0;
         }
 
         .swiper {
             width: 100%;
-            padding-top: 70px;
-            padding-bottom: 50px;
+            // padding-top: 70px;
+            // padding-bottom: 50px;
             margin-top: 10vh;
         }
 
@@ -38,7 +52,7 @@
             background-size: cover;
             width: 30vw;
             height: 30vh;
-            max-width: 100%;
+            // max-width: 100%;
             height: auto;
         }
 
@@ -120,14 +134,114 @@
     }
 }
 
-@media screen and (min-width: 640px) {
-    .reviewsSection {
-        width: 640px;
+/* 1024px */
+@media screen and (max-width: 1024px) {
+    .serviceReviewsPage .serviceReviewsPageTitle {
+        // top: 20vh;
+    }
+
+    .serviceReviewsPage .reviewsSection {
+        // width: 70vw;
+    }
+
+    .serviceReviewsPage .bgBox {
+        // bottom: 10vh;
+
+        .bgLineBox {
+            .bgLineGold1 {
+                left: 18vw;
+            }
+
+            .bgLineNavy1 {
+                left: 15vw;
+            }
+
+            .bgLineGold2 {
+                left: 12vw;
+            }
+
+            .bgLineNavy2 {
+                left: 9vw;
+            }
+
+            .bgLineGold3 {
+                left: 6vw;
+            }
+
+            .bgLineNavy3 {
+                left: 3vw;
+            }
+        }
     }
 }
 
-@media screen and (min-width: 768px) {
-    .reviewsSection {
-        width: 768px;
+/* 480px */
+@media only screen and (max-width: 480px) {
+    .serviceReviewsPage .serviceReviewsPageTitle {
+        top: 20vh;
+        font-size: 3.6vw;
+    }
+
+    .serviceReviewsPage .reviewsSection {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        height: 45vh;
+        gap: 20px;
+        margin-top: 0vh;
+        margin-left: 0vw;
+        position: absolute;
+        bottom: 24vh;
+        left: 17vw;
+
+        .mySwiper {
+            padding: 0;
+            margin: 0;
+        }
+
+        .mySwiper2 {
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .serviceReviewsPage .bgBox {
+        height: 65vh;
+
+        .bgLineBox {
+            .bgLineGold1 {
+                height: 65vh;
+            }
+
+            .bgLineNavy1 {
+                height: 65vh;
+
+            }
+
+            .bgLineGold2 {
+                height: 65vh;
+
+            }
+
+            .bgLineNavy2 {
+                height: 65vh;
+
+            }
+
+            .bgLineGold3 {
+                height: 65vh;
+
+            }
+
+            .bgLineNavy3 {
+                height: 65vh;
+
+            }
+        }
     }
 }
