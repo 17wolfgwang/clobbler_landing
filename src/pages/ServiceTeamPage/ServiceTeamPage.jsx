@@ -17,9 +17,11 @@ const ServiceTeamPage = () => {
             <div className='serviceTeamPageTitleSection'>
                 <div className='serviceTeamPageTitle'>패션 스타일 튜너,</div>
                 <div className='serviceTeamPageTitle'>CLOBBLER</div>
-                <div className='serviceTeamPageSubTitle'>&#x2713; 패션 스타일 튜닝에 진심인 전문가들이 고객을 위해 열정을 다하고 있습니다.</div>
-                <div className='serviceTeamPageSubTitle'>&#x2713; 업계 최고 패션 수선 엔지니어들로 최상의 패션 리페어 서비스 제공합니다.</div>
-                <div className='serviceTeamPageSubTitle'>&#x2713; 섬세한 수선 기술과 다양한 아이디어를 통해 스타일을 돋보이게 합니다.</div>
+                <div className='serviceTeamPageSubTitleSection'>
+                    <div className='serviceTeamPageSubTitle'>&#x2713; 패션 스타일 튜닝에 진심인 전문가들이 고객을 위해 열정을 다하고 있습니다.</div>
+                    <div className='serviceTeamPageSubTitle'>&#x2713; 업계 최고 패션 수선 엔지니어들로 최상의 패션 리페어 서비스 제공합니다.</div>
+                    <div className='serviceTeamPageSubTitle'>&#x2713; 섬세한 수선 기술과 다양한 아이디어를 통해 스타일을 돋보이게 합니다.</div>
+                </div>
                 <Button />
             </div>
             <div className='videoSection'>

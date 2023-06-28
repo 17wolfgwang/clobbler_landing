@@ -13,9 +13,9 @@
         user-select: none;
 
         .lastTitle {
-            font-size: 5rem;
+            font-size: 8vw;
             font-weight: 900;
-            line-height: 10vh;
+            line-height: 12vh;
         }
 
         Button {
@@ -41,7 +41,7 @@
         margin-top: 10vh;
 
         .businessPartnerTitle {
-            font-size: 2rem;
+            font-size: 4vw;
             font-weight: 900;
             opacity: 0.5;
             margin: 1vh;
@@ -55,7 +55,7 @@
 
             .businessPartner {
                 height: 10vh;
-                font-size: 0.9rem;
+                font-size: 1.4vw;
                 opacity: 0.5;
                 display: flex;
                 justify-content: center;
@@ -74,7 +74,7 @@
             }
 
             .clothAssosiation {
-                font-size: 0.8rem;
+                font-size: 1.2vw;
             }
 
             .businessPartner:hover {
@@ -95,9 +95,306 @@
         margin-bottom: 6vh;
 
         .footerTitle {
+            font-size: 1.3vw;
             color: grey;
             user-select: none;
             line-height: 2vh;
         }
     }
+}
+
+/* 1024px */
+@media screen and (max-width: 1024px) {
+    .serviceFooterPage {
+        // flex-direction: column;
+        // align-items: center;
+
+        .lastTitleSection {
+            // position: static;
+            // width: auto;
+            // text-align: center;
+
+            .lastTitle {
+                // width: 50vw;
+                // height: 12vh;
+                // line-height: 6vh;
+            }
+
+            Button {
+                // margin-top: 4vh;
+            }
+        }
+
+        .businessPartnerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-top: 8vh;
+
+            .businessPartnerTitle {
+                // font-size: 2rem;
+                // margin: 1vh 0;
+            }
+
+            .businessPartnerGrid {
+                // grid-template-columns: repeat(2, 1fr);
+                // gap: 10px;
+
+                .businessPartner {
+                    width: 18vw;
+                    // height: 8vh;
+                    // font-size: 1rem;
+
+                    img {
+                        // max-width: 50%;
+                        // max-height: 50%;
+                    }
+
+                    .clothAssosiationLogo {
+                        // width: 15%;
+                        // height: 25%;
+                    }
+                }
+
+                .clothAssosiation {
+                    // font-size: 0.8rem;
+                }
+            }
+        }
+
+        .footerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-bottom: 4vh;
+            // text-align: center;
+
+            .footerTitle {
+                // line-height: 3vh;
+            }
+        }
+    }
+
+
+}
+
+/* 767px */
+@media screen and (max-width: 767px) {
+    .serviceFooterPage {
+        // flex-direction: column;
+        // align-items: center;
+
+        .lastTitleSection {
+            // position: static;
+            // width: auto;
+            // text-align: center;
+
+            .lastTitle {
+                // font-size: 3.5rem;
+                // line-height: 6vh;
+            }
+
+            Button {
+                width: 12vw;
+                padding: 1vh 0.2vw;
+            }
+        }
+
+        .businessPartnerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-top: 8vh;
+
+            .businessPartnerTitle {
+                // font-size: 2rem;
+                // margin: 1vh 0;
+            }
+
+            .businessPartnerGrid {
+                // grid-template-columns: repeat(2, 1fr);
+                // gap: 10px;
+
+                .businessPartner {
+                    // width: 23vw;
+                    // height: 8vh;
+                    // font-size: 1rem;
+
+                    img {
+                        // max-width: 50%;
+                        // max-height: 50%;
+                    }
+
+                    .clothAssosiationLogo {
+                        // width: 15%;
+                        // height: 25%;
+                    }
+                }
+
+                .clothAssosiation {
+                    // font-size: 0.5vw;
+                }
+            }
+        }
+
+        .footerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-bottom: 4vh;
+            // text-align: center;
+
+            .footerTitle {
+                // line-height: 3vh;
+            }
+        }
+    }
+
+
+}
+
+/* 480px */
+@media only screen and (max-width: 480px) {
+    .serviceFooterPage {
+        // flex-direction: column;
+        // align-items: center;
+
+        .lastTitleSection {
+            // position: static;
+            // width: auto;
+            // text-align: center;
+
+            .lastTitle {
+                // font-size: 3rem;
+                line-height: 4.5vh;
+            }
+
+            Button {
+                // margin-top: 3vh;
+            }
+        }
+
+        .businessPartnerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-top: 6vh;
+
+            .businessPartnerTitle {
+                // font-size: 1.8rem;
+                // margin: 0.5vh 0;
+            }
+
+            .businessPartnerGrid {
+                // grid-template-columns: repeat(2, 1fr);
+                // gap: 8px;
+
+                .businessPartner {
+                    // height: 6vh;
+                    // font-size: 0.9rem;
+
+                    img {
+                        // max-width: 60%;
+                        // max-height: 60%;
+                    }
+
+                    .clothAssosiationLogo {
+                        // width: 20%;
+                        // height: 30%;
+                    }
+                }
+
+                .clothAssosiation {
+                    // font-size: 0.7rem;
+                }
+            }
+        }
+
+        .footerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-bottom: 3vh;
+            // text-align: center;
+
+            .footerTitle {
+                // line-height: 2vh;
+            }
+        }
+    }
+
+
+}
+
+/* 320px */
+@media only screen and (max-width: 320px) {
+    .serviceFooterPage {
+        // flex-direction: column;
+        // align-items: center;
+
+        .lastTitleSection {
+            // position: static;
+            // width: auto;
+            // text-align: center;
+
+            .lastTitle {
+                // font-size: 2.5rem;
+                // line-height: 4vh;
+            }
+
+            Button {
+                // margin-top: 2vh;
+            }
+        }
+
+        .businessPartnerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-top: 4vh;
+
+            .businessPartnerTitle {
+                // font-size: 1.5rem;
+                // margin: 0.5vh 0;
+            }
+
+            .businessPartnerGrid {
+                // grid-template-columns: repeat(1, 1fr);
+                // gap: 6px;
+
+                .businessPartner {
+                    // height: 4vh;
+                    // font-size: 0.8rem;
+
+                    img {
+                        // max-width: 70%;
+                        // max-height: 70%;
+                    }
+
+                    .clothAssosiationLogo {
+                        // width: 25%;
+                        // height: 40%;
+                    }
+                }
+
+                .clothAssosiation {
+                    // font-size: 0.6rem;
+                }
+            }
+        }
+
+        .footerSection {
+            // position: static;
+            // width: 90%;
+            // height: auto;
+            // margin-bottom: 2vh;
+            // text-align: center;
+
+            .footerTitle {
+                // line-height: 1.5vh;
+            }
+        }
+    }
+
+
 }
