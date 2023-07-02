@@ -221,8 +221,8 @@
         // align-items: center;
 
         .bgBigBox {
-            width: 70vw;
-            height: 60vh;
+            width: 90%;
+            height: 75vh;
 
             .diagonalBox {
                 width: 0px;
@@ -262,13 +262,13 @@
         }
 
         .serviceTeamPageTitleSection {
-            top: 23vh;
-            left: 7vw;
+            top: 20vh;
+            left: 5.5vw;
             // left: 0;
             // width: 100%;
 
             .serviceTeamPageTitle {
-                font-size: 5.5vw;
+                font-size: 7vw;
                 line-height: 2.5vh;
             }
 
@@ -278,8 +278,10 @@
 
                 .serviceTeamPageSubTitle {
                     width: 68vw;
-                    font-size: 2vw;
+                    font-size: 3.3vw;
                     margin: 0;
+                    margin-bottom: 1vh;
+                    opacity: 0.6;
 
                     line-height: 3vh;
                 }
@@ -287,16 +289,17 @@
 
             Button {
                 position: absolute;
-                left: 45vw;
+                left: 42vw;
+                width: 20vw;
                 // margin-left: 1vw;
                 // margin-top: 1vh;
-                transform: scale(1.2);
-                font-size: 1vw;
+                // transform: scale(1.2);
+                font-size: 2vw;
             }
         }
 
         .videoSection {
-            top: 32%;
+            top: 28%;
             left: 10%;
 
             .bgVideoSection {

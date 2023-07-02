@@ -9,13 +9,13 @@
         position: absolute;
         right: 0;
         text-align: right;
-        width: 45vw;
+        width: 50vw;
         user-select: none;
 
         .lastTitle {
-            font-size: 8vw;
+            font-size: 9vw;
             font-weight: 900;
-            line-height: 12vh;
+            line-height: 10vh;
         }
 
         Button {
@@ -41,7 +41,7 @@
         margin-top: 10vh;
 
         .businessPartnerTitle {
-            font-size: 4vw;
+            font-size: 7vw;
             font-weight: 900;
             opacity: 0.5;
             margin: 1vh;
@@ -54,27 +54,28 @@
             text-align: center;
 
             .businessPartner {
+                width: 23vw !important;
                 height: 10vh;
-                font-size: 1.4vw;
+                font-size: 2.5vw;
                 opacity: 0.5;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 img {
-                    max-width: 30%;
-                    max-height: 30%;
+                    max-width: 50%;
+                    max-height: 50%;
                     display: block;
                 }
 
                 .clothAssosiationLogo {
-                    width: 10%;
-                    height: 15%;
+                    width: 30%;
+                    height: 30%;
                 }
             }
 
             .clothAssosiation {
-                font-size: 1.2vw;
+                font-size: 2.5vw;
             }
 
             .businessPartner:hover {
@@ -95,7 +96,7 @@
         margin-bottom: 6vh;
 
         .footerTitle {
-            font-size: 1.3vw;
+            font-size: 2vw;
             color: grey;
             user-select: none;
             line-height: 2vh;
@@ -270,7 +271,8 @@
             }
 
             Button {
-                // margin-top: 3vh;
+                width: 20vw;
+                margin-top: 3vh;
             }
         }
 

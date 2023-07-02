@@ -5,7 +5,7 @@ import CountingAnimation from './CountingAnimation';
 const ServiceNumberPage = () => {
     return (
         <div className='center serviceNumberPage'>
-            <div className='serviceNumberPageTitle'>숫자로 입증하는 수선/리폼서비스</div>
+            <div className='serviceNumberPageTitle'>숫자로 입증하는 <br></br>수선/리폼서비스</div>
             <div className='serviceNumberPageSubTitle'>신뢰성, 전문성, 속도로 고객을 만족시키다.</div>
             <div className='numberSection'>
                 <div className='numberDescTxt'>작업 정확도</div>
@@ -20,17 +20,17 @@ const ServiceNumberPage = () => {
                 <div>
                     <CountingAnimation targetCount={48} duration={2000} /><span> 시간</span>
                 </div>
-                <div className='numberDescTxt'>디자이너 총 작업 수</div>
+                <div className='numberDescTxt'>평균 업계 경력</div>
                 <div>
-                    <CountingAnimation targetCount={10000} duration={2000} /><span> +</span>
+                    <CountingAnimation targetCount={30} duration={2000} /><span> 년</span>
                 </div>
                 <div className='numberDescTxt'>이용 고객 수</div>
                 <div>
                     <CountingAnimation targetCount={500} duration={2000} /><span>+</span>
                 </div>
-                <div className='numberDescTxt'>평균 업계 경력</div>
+                <div className='numberDescTxt'>디자이너 총 작업 수</div>
                 <div>
-                    <CountingAnimation targetCount={30} duration={2000} /><span>년</span>
+                    <CountingAnimation targetCount={10000} duration={2000} /><span> +</span>
                 </div>
                 <div className='numberDescTxt'>신속한 문의 응답</div>
                 <div>

@@ -1,72 +1,23 @@
 import React from 'react';
 import './ServiceReviewsPage.scss';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
-SwiperCore.use([EffectCoverflow, Pagination]);
-const slide_img = [
-    "/images/reviews/mended1.jpeg",
-    "https://swiperjs.com/demos/images/nature-1.jpg",
-    "https://swiperjs.com/demos/images/nature-2.jpg",
-    "https://swiperjs.com/demos/images/nature-3.jpg",
-    "https://swiperjs.com/demos/images/nature-4.jpg",
-    "https://swiperjs.com/demos/images/nature-5.jpg",
-    "https://swiperjs.com/demos/images/nature-6.jpg",
-    "https://swiperjs.com/demos/images/nature-7.jpg",
-    "https://swiperjs.com/demos/images/nature-8.jpg",
-    "https://swiperjs.com/demos/images/nature-9.jpg",
-];
-const slide_img2 = [
-    "/images/reviews/mended1.jpeg",
-    "https://swiperjs.com/demos/images/nature-1.jpg",
-    "https://swiperjs.com/demos/images/nature-2.jpg",
-    "https://swiperjs.com/demos/images/nature-3.jpg",
-    "https://swiperjs.com/demos/images/nature-4.jpg",
-    "https://swiperjs.com/demos/images/nature-5.jpg",
-    "https://swiperjs.com/demos/images/nature-6.jpg",
-    "https://swiperjs.com/demos/images/nature-7.jpg",
-    "https://swiperjs.com/demos/images/nature-8.jpg",
-    "https://swiperjs.com/demos/images/nature-9.jpg",
-];
 
 const ServiceReviewsPage = () => {
     return (
         <div className='center serviceReviewsPage'>
-            <div className='serviceReviewsPageTitle'>
-                고객들의 소중한 이용 후기를 확인해보세요.
-            </div>
             <div className='reviewsSection'>
-                <Swiper
-                    effect="cube"
-                    grabCursor={true}
-                    className="mySwiper"
-                >
-                    {slide_img.map((img, i) => {
-                        return (
-                            <SwiperSlide key={i}>
-                                <img src={img} alt="reviews" />
-                            </SwiperSlide>
-                        );
-                    })}
-                </Swiper>
-                <Swiper
-                    effect="coverflow"
-                    grabCursor={true}
-                    navigation={true}
-                    className="mySwiper2"
-                >
-                    {slide_img2.map((img, i) => {
-                        return (
-                            <SwiperSlide key={i}>
-                                <img src={img} alt="reviews" />
-                            </SwiperSlide>
-                        );
-                    })}
-                </Swiper>
+                <div className='reviews'>
+                    금새 커버린 아이들 <span className='reviewsPoint'>"교복"</span> 걱정
+
+                </div>
+                <div className='reviews'>
+                    어느새 작아져버린 비싼 <span className='reviewsPoint'>"정장"</span>
+
+                </div>
+                <div className='reviews'>
+                    버리기 아까운 옷장 속<span className='reviewsPoint'>"명품"</span> 옷
+
+                </div>
             </div>
             <div className='bgBox'>
                 <div className='bgLineBox'>

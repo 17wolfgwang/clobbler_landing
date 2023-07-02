@@ -11,7 +11,7 @@
         align-items: center;
 
         .logo {
-            font-size: 3.5vw;
+            font-size: 3vw;
             padding: 2vw;
             font-weight: 900;
             color: var(--color-font-point);
@@ -104,7 +104,7 @@
 @media only screen and (max-width: 480px) {
     .navBarWrap .navBar {
         .logo {
-            font-size: 3.5vw;
+            font-size: 7vw;
             padding: 2vw;
         }
 
@@ -116,6 +116,7 @@
             }
 
             .snsIcon {
+                display: none;
                 width: 12vw;
                 height: 12vw;
                 margin: 0 2vw;

@@ -100,12 +100,13 @@
 
 @media only screen and (max-width: 480px) {
     .serviceNumberPage .serviceNumberPageTitle {
-        font-size: 1.15rem;
+        font-size: 9vw;
+        text-align: center;
         margin-top: 0vh;
     }
 
     .serviceNumberPage .serviceNumberPageSubTitle {
-        font-size: 0.7rem;
+        font-size: 4vw;
         margin-bottom: 6vh;
     }
 
@@ -114,8 +115,9 @@
         row-gap: 4vh;
 
         div {
-            width: 17vw;
-            height: 3vh;
+            width: 18vw;
+            height: 8vh;
+            border-radius: 3px;
             display: flex;
             justify-content: center;
             text-align: center;
@@ -123,14 +125,17 @@
         }
 
         .numberDescTxt {
-            font-size: 0.45rem;
-            font-weight: 900;
-            background-color: var(--color-font-point);
+            font-size: 3vw;
+            font-weight: bold;
+            color: var(--color-background);
+            // background-color: var(--color-font-point);
+            align-items: baseline;
             // padding: 5px 0.5px;
         }
 
         .number {
-            font-size: 1.2rem;
+            font-size: 9vw;
+            align-items: end;
         }
 
         span {
