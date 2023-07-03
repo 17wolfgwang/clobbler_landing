@@ -5,7 +5,7 @@ import './styles/common.scss';
 import App from './App';
 // import ReactGA from 'react-ga';
 import { BrowserRouter } from 'react-router-dom';
-import GoogleAnalytics from './GoogleAnalytics';
+// import GoogleAnalytics from './GoogleAnalytics';
 // const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS;
 // ReactGA.initialize(TRACKING_ID);
 
@@ -18,6 +18,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <App />
-    <GoogleAnalytics />
+    {/* <GoogleAnalytics /> */}
   </BrowserRouter>
 );
