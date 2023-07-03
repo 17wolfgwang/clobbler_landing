@@ -268,6 +268,7 @@
             .lastTitle {
                 // font-size: 3rem;
                 line-height: 4.5vh;
+                margin-bottom: 1vh;
             }
 
             Button {
@@ -278,7 +279,7 @@
 
         .businessPartnerSection {
             // position: static;
-            // width: 90%;
+            // width: 50vw;
             // height: auto;
             // margin-top: 6vh;
 
@@ -288,21 +289,28 @@
             }
 
             .businessPartnerGrid {
-                // grid-template-columns: repeat(2, 1fr);
+                margin-top: 3vh;
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 1.5vh;
                 // gap: 8px;
 
                 .businessPartner {
                     // height: 6vh;
-                    // font-size: 0.9rem;
+                    margin-left: 2vw;
+                    width: 40vw !important;
+                    height: 3vh;
+                    font-size: 3vw;
+                    justify-content: start;
+
 
                     img {
                         // max-width: 60%;
-                        // max-height: 60%;
+                        height: 3vh;
                     }
 
                     .clothAssosiationLogo {
-                        // width: 20%;
-                        // height: 30%;
+                        width: 5%;
+                        height: 30%;
                     }
                 }
 
