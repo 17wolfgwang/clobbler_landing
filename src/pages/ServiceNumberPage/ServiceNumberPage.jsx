@@ -5,7 +5,7 @@ import CountingAnimation from './CountingAnimation';
 const ServiceNumberPage = () => {
     return (
         <div className='center serviceNumberPage'>
-            <div className='serviceNumberPageTitle'>숫자로 입증하는 <br></br>수선/리폼서비스</div>
+            <div className='serviceNumberPageTitle'>숫자로 입증하는 수선/리폼 서비스</div>
             <div className='serviceNumberPageSubTitle'>신뢰성, 전문성, 속도로 고객을 만족시키다.</div>
             <div className='numberSection'>
                 <div className='numberDescTxt'>작업 정확도</div>
